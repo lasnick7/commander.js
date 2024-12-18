@@ -16,6 +16,8 @@ program.parse();
 
 console.log(`cheese: ${program.opts().cheese}`);
 
-// Try the following:
 //    node options-defaults.js
+// cheese: blue
+
 //    node options-defaults.js --cheese stilton
+// cheese: stilton

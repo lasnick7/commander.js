@@ -11,7 +11,7 @@ program
   .option('--no-sauce', 'Remove sauce')
   .option('--cheese <flavour>', 'cheese flavour', 'mozzarella')
   .option('--no-cheese', 'plain with no cheese');
-
+  //.option('--sauce [type]', 'cheese type');
 program.parse();
 
 const options = program.opts();
@@ -21,7 +21,14 @@ const cheeseStr =
 console.log(`You ordered a pizza with ${sauceStr} and ${cheeseStr}`);
 
 // Try the following:
-//    node options-negatable.js
-//    node options-negatable.js --sauce
-//    node options-negatable.js --cheese=blue
-//    node options-negatable.js --no-sauce --no-cheese
+// //    node options-negatable.js
+// You ordered a pizza with sauce and mozzarella cheese
+
+// //    node options-negatable.js --sauce
+// You ordered a pizza with sauce and mozzarella cheese
+
+// //    node options-negatable.js --cheese=blue
+// You ordered a pizza with sauce and blue cheese
+
+// //    node options-negatable.js --no-sauce --no-cheese
+// You ordered a pizza with no sauce and no cheese

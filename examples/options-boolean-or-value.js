@@ -16,7 +16,11 @@ if (options.cheese === undefined) console.log('no cheese');
 else if (options.cheese === true) console.log('add cheese');
 else console.log(`add cheese type ${options.cheese}`);
 
-// Try the following:
 //    node options-boolean-or-value
+// no cheese
+
 //    node options-boolean-or-value --cheese
+// add cheese
+
 //    node options-boolean-or-value --cheese mozzarella
+// add cheese type mozzarella
